@@ -1,6 +1,6 @@
 const http = require('node:http');
 
-const url = 'localhost';
+const hostname = 'localhost';
 const port = 3000;
 
 const server = http.createServer((request, response) => {
@@ -14,6 +14,6 @@ const server = http.createServer((request, response) => {
   response.end();
 });
 
-server.listen(port, url, () => {
-  console.log(`Server is running on ${url}:${port}`);
+server.listen(port, hostname, () => {
+  console.log(`Server is running on ${hostname}:${port}`);
 });
